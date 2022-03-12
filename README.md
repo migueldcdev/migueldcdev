@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @migueldcdev
 - 🖥️ I’m interested in Web Development 
 - 🌱 I’m currently learning React and Node.js 
-- 🙋‍ I’m looking to collaborate on open source projects I could fit
+- 🙋‍ I’m looking to collaborate on open source projects 
 
 <!---
 migueldcdev/migueldcdev is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
