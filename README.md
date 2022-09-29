@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @migueldcdev
-- 🖥️ I’m interested in Web Development 
-- 🌱 I’m currently learning React and Node.js 
+- 🖥️ I’m interested in Web3 Development 
+- 🌱 I’m currently workin with Angular, Solidity and Node.js 
 - 🙋‍ I’m looking to collaborate on open source projects 
 
 <!---
