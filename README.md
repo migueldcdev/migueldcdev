@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @migueldcdev
-- 🖥️ I’m interested in Web3 Development 
+- 🖥️ I’m interested in Blockchain Development 
 - 🌱 I’m currently workin with Angular, Solidity and Node.js 
 - 🙋‍ I’m looking to collaborate on open source projects 
 
