@@ -64,7 +64,7 @@ Instead of one model doing everything, I split the work across specialized agent
 
 **4. Open a pull request**
 
-Agent output goes through the same PR process as human work. No shortcuts.
+Agent output goes through the same PR process as human work.
 
 **5. Review the code as a human**
 
