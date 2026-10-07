@@ -6,8 +6,6 @@
 <p align="center"><em>Fullstack Product Engineer · Based in Spain</em></p>
 
 
----
-
 ## About me
 
 I'm the engineer you want when a problem needs an owner, not a ticket. Over 4+ years as a fullstack engineer, I've worked across engineering, design and product, and I like owning the whole cycle, from idea to shipped feature.
@@ -25,7 +23,7 @@ Off-topic, ego-driven fun facts:
 
 **Fullstack Engineer - <a href="https://www.transkriptorium.com/">Transkriptorium</a>**
 
-Building end-2-end a document annotation platform to train ML models on HTR, think of Label Studio but for old manuscripted collections. 
+Building an end-to-end document annotation platform to train HTR (handwritten text recognition) models. Think Label Studio, but for old manuscript collections.
 
 <h3>Wolflord</h3>
 
@@ -75,7 +73,7 @@ Tests, linting, and formatting run automatically. If everything passes, the PR c
 
 **6. Deploy to staging via CI**
 
-CI deploys dev branch to a staging environment that mirrors production.
+CI deploys the dev branch to a staging environment that mirrors production.
 
 **7. Human QA in staging**
 
@@ -168,7 +166,7 @@ Only after staging QA signs off.
 ## Where to find me
 
 
-If you want to contact me you can do it trough my LinkedIn 
+If you want to contact me, you can reach me through LinkedIn.
 
 <a href="https://www.linkedin.com/in/miguel-diaz-campos/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" height="28"></a>
 
