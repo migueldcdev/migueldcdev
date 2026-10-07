@@ -35,53 +35,64 @@ Wolflord is the game I've always wanted to play but could never find. It is a mu
 
 ## How I Approach AI-Native Development
 
-> **改善 · Kaizen**
+> **改善**
 >
-> *I don't believe in software factories. Instead, I take a Kaizen (改善) approach to AI-native workflows: the Japanese philosophy of continuous improvement, built on the premise that small, consistent daily changes lead to major transformations and greater efficiency over time.*
+> *I don't believe in software factories that pump out vibed unreviewed AI code. Instead, I apply Kaizen (改善), the Japanese philosophy of continuous improvement, to AI-native workflows: small, consistent improvements that compound over time.*
 
 <p align="center">
-  <img src="./assets/ai-workflow.svg" width="100%" alt="AI-native development workflow: spec, tests as contract, agentic team, PR with manual checks, human review, quality gates, staging, human QA, production">
+  <img src="./assets/ai-workflow.svg" width="100%" alt="AI-native development workflow: spec, scope, tests as contract, agentic team, pull request, human review, quality gates, staging, human QA, production, measure, close the loop">
 </p>
 
 **0. Start with a strong spec**
 
-A clear, well-defined spec is the foundation. The better the model understands what to build and why, the less time you spend correcting what it builds.
+A clear, well-defined spec is the foundation. The better the model understands what to build and why, the less time you spend correcting what it builds. The spec also defines how we'll know the feature worked.
 
-**1. Make the tests the contract**
+**1. Scope it**
 
-Many people treat the spec or the code as the contract between you and the model. I think the strongest contract is the tests: unit, integration, and end-to-end. A spec can be misread and code can drift, but a test passes or it doesn't. This is where I put the pressure.
+I break work into small, well-defined tasks, because agents do their best work on focused problems and small PRs are easier to review. I also scale the process to the risk: a copy change takes the light path, while auth, payments or data migrations get every step below.
 
-**2. Generate with an agentic team**
+**2. Make the tests the contract**
+
+Many people treat the spec or the code as the contract between you and the model. I think the strongest contract is the tests: unit, integration and end-to-end. A spec can be misread and code can drift, but a test passes or it doesn't. This is where I put the pressure.
+
+**3. Generate with an agentic team**
 
 Instead of one model doing everything, I split the work across specialized agents:
-
 - **Developer:** writes the implementation against the tests
-- **Reviewer:** checks quality, readability, and adherence to the spec
+- **Reviewer:** checks quality, readability and adherence to the spec
 - **Security auditor:** looks for vulnerabilities and unsafe patterns
 
-**3. Open a PR with manual action checks**
+**4. Open a pull request**
 
-Agent output goes through the same pull request process as human work.
+Agent output goes through the same PR process as human work. No shortcuts.
 
-**4. Review the code as a human**
+**5. Review the code as a human**
 
-I review agent-written code the same way I'd review a colleague's: carefully, critically, and as a first-class contribution. Not rubber-stamped, and not dismissed.
+I review agent-written code the way I'd review a colleague's: carefully, critically and as a first-class contribution. Not rubber-stamped, and not dismissed.
 
-**5. Automate the quality gates**
+**6. Automate the quality gates**
 
-Tests, linting, and formatting run automatically. If everything passes, the PR can be manually merged.
+Tests, linting and formatting run automatically. Only when everything passes can the PR be merged, and the merge is always manual.
 
-**6. Deploy to staging via CI**
+**7. Deploy to staging via CI**
 
 CI deploys the dev branch to a staging environment that mirrors production.
 
-**7. Human QA in staging**
+**8. Human QA in staging**
 
 A person validates the feature in a real environment. This catches what tests can't: UX issues, edge cases nobody specified, and things that are technically correct but feel wrong.
 
-**8. Deploy to production**
+**9. Deploy to production**
 
-Only after staging QA signs off.
+Only after staging QA signs off, rolled out behind a feature flag when the change is risky.
+
+**10. Measure in production**
+
+Shipping isn't the finish line. I check the success metric defined in the spec, watch errors and performance, and look at how people actually use the feature. If it isn't working, the flag makes it easy to roll back.
+
+### Closing the loop
+
+After every cycle, I feed what went wrong back into the specs, tests and agent instructions, so the next cycle starts better than the last. That's where the Kaizen lives.
 
 ## Tech stack
 
